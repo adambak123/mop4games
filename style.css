@@ -1,9 +1,10 @@
 /* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&display=swap');
-@import url("http://www.fontstatic.com/f=sky-bold,sky");
-@import url("http://www.fontstatic.com/f=jooza");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -304,7 +305,7 @@ margin-top: 5rem;
 }
 .linkp{
     color: white;
-    font-family: 'sky';
+    font-family: 'Noto Kufi Arabic', sans-serif;
     font-size: 33px;
     transition: 0.5s ease;
 }
@@ -391,10 +392,11 @@ margin-top: 5rem;
 }
 .about p{
     font-size: 1.4rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
     text-align: justify;
-    font-family: 'sky';
-    font-weight: 100;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    line-height: 50px;
+    font-weight: 200;
 
 }
 .screenshots h2{
@@ -402,7 +404,7 @@ margin-top: 5rem;
     font-size: 1.8rem ;
     font-weight: 500;
     border-bottom: 4px solid #6b2424;
-    margin: 1.6rem 0;
+    margin: 2rem 0;
 }
 /* .screenshots-content{
     display: grid;
@@ -458,10 +460,11 @@ margin-top: 5rem;
     background-color: #181818;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: #68232f;
+    background:  linear-gradient(to right, #642b24 ,#d63031  );
 }
 ::-webkit-scrollbar-thumb:hover{
-    background-color: #cf2340;
+    background: linear-gradient(to top, #e17055, #d63031);
+    border-radius: 4px;
 }
 /* Custom Scroll Bar */
 .progress{
@@ -483,6 +486,7 @@ margin-top: 5rem;
 .swiper{
     width: 50%;
     height: fit-content;
+    border-radius: 5px;
 }
 .swiper-slide img {
     width: 100% ;
@@ -495,7 +499,7 @@ margin-top: 5rem;
     justify-content: center;
 }
 .uli li{
-    font-size: 20px;
+    font-size: 22px;
 }
 /* Making Responsive */
 @media (max-width:1080px){
@@ -505,6 +509,7 @@ margin-top: 5rem;
     }
     .swiper {
         width: 88%;
+        border-radius: 5px;
     }
     .container2{
         height:83vh ;
@@ -540,6 +545,7 @@ margin-top: 5rem;
     .swiper {
         width: 100%;
         height: fit-content;
+        border-radius: 5px;
     }
     .container2{
     height: 35vh;
@@ -616,6 +622,7 @@ margin-top: 5rem;
     .swiper {
         width: 101%;
         height: fit-content;
+        border-radius: 5px;
     }
     .container2{
     height: 30vh;
@@ -660,6 +667,7 @@ margin-top: 5rem;
 @media (min-width:1700px) and (max-width:2685px){
     .swiper{
         width: 100%;
+        border-radius: 5px;
     }
     .notification{
         right: 25rem;
@@ -682,6 +690,7 @@ margin-top: 5rem;
     }
     .swiper{
         width: 90%;
+        border-radius: 8px 8px 8px 8px;
     }
     .menu img{
         width:450px ;
@@ -730,4 +739,34 @@ margin-top: 5rem;
         height: 41vh;
     }
 }
+.swiper-pagination-bullet{
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 0.2rem !important ;
+    background: #f7f7f7 !important ;
+    opacity: 1 !important;
+    transition: 0.7s ease !important;
 
+}
+.swiper-pagination-bullet-active{
+    width: 1.5rem !important;
+    background-color: #b81a1a !important;
+    transition: 0.5s ease !important;
+}
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+    color: #ff0000;
+    height: 70px;
+    width: 70px;
+    background-color: #16161677;
+    border-radius: 50%;
+}
+.swiper .swiper-button-next{
+    padding-left: 10px;
+}
+.swiper .swiper-button-prev{
+    padding-right: 10px;
+}
+.kol{
+    color: rgb(32, 170, 163);
+    text-decoration: underline;
+}
